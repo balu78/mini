@@ -1,0 +1,21 @@
+
+<div class="col-md-6 offset-md-3 col-sm-12" style="margin-top:100px;" >
+
+<ng-container *ngFor="let message of messages | async">
+  <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+                                    'to':   message.sentBy === 'user' }">
+    {{ message.content }}
+  </div>
+</ng-container>
+<label for="nameField"> Message</label>
+<div class="row">
+<div class="col-md-10 col-sm-10">
+<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+</div>
+<div class="col-md-2 col-sm-10">
+<button (click)="sendMessage()">Send</button>
+</div>
+</div>
+</div>
+<!-- style="width:50%;height:50%;margin-top:100px;" -->
+
