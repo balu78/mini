@@ -8,19 +8,16 @@ import { AppComponent } from './app.component';
 import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
 import { ChatModule } from './chat/chat.module';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { ParticlesModule } from 'angular-particle';
-import { FooterComponent } from './footer/footer.component';
+import { WebsiteComponent } from './website/website.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
-    FooterComponent
+    WebsiteComponent
   ],
   imports: [
     BrowserModule,
-    ParticlesModule,
     ChatModule,
     RouterModule.forRoot([
       {
@@ -28,7 +25,11 @@ import { FooterComponent } from './footer/footer.component';
         component:HomeComponent
       },
       {
-        path:'chatbot',
+        path:'website',
+        component:WebsiteComponent
+      },
+      {
+        path:'chat',
         component:ChatDialogComponent
       }])
     
