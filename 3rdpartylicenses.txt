@@ -79,10 +79,6 @@ MIT
 MIT
 MIT
 
-angular-particle@1.0.4
-MIT
-MIT
-
 css-loader@0.28.11
 MIT
 Copyright JS Foundation and other contributors
