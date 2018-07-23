@@ -1,1 +1,259 @@
-<h1 align="center" style="padding-top:10%;">Under Construction.....!</h1>
+
+<div class="top-bar">
+	<div class="left"> 
+		<a href="#hero"><i class="fa fa-laptop fa-lg"> </i> My Website Name</a>
+	</div>
+	<div class="right hidden-sm hidden-xs" id="nav">
+		<a href="/website#about">ABOUT</a>
+		<a href="/website#services">SERVICES</a>
+		<a href="/website#portfolio">SAMPLES</a>
+		<a href="/website#price">PRICING</a>
+		<a href="/website#team">TEAM</a>
+		<a href="/website#contact">CONTACT</a>
+	</div>
+	<div>
+		<a id="navBtn" class="right hidden-lg hidden-md"><i class="fa fa-bars fa-lg" onclick="openNav()"></i>
+		</a>
+	</div>
+	<div class="right hidden-lg hidden-md" id="sideNav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="/website#about" onclick="closeNav()">ABOUT</a>
+		<a href="/website#services" onclick="closeNav()">SERVICES</a>
+		<a href="/website#portfolio" onclick="closeNav()">SAMPLES</a>
+		<a href="/website#price" onclick="closeNav()">PRICING</a>
+		<a href="/website#team" onclick="closeNav()">TEAM</a>
+		<a href="/website#contact" onclick="closeNav()">CONTACT</a>
+	</div>
+</div>
+<!-- Main Page -->
+<div id="hero">
+	<div class="bottom-left" style="color:black;">
+		<h1>Book your Appointment within min's</h1>
+		<p>We got everything you need to book your Appointment </p>
+	</div>
+</div>
+<!-- About Section -->
+<div id="about">
+	<div class="hdn"></div>
+	<h2>ABOUT THE Website</h2>
+  	<p>Key features of our company</p>
+  		<div id="features">
+    		<div class="col-lg-3 col-md-6 col-sm-6">
+      			<i class="fa fa-desktop fa-5x"></i>
+      			<p>Heading 1</p>
+      			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    		</div>
+   			<div class="col-lg-3 col-md-6 col-sm-6">
+      			<i class="fa fa-heart fa-5x"></i>
+      			<p>Heading 2</p>
+      			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    		</div>
+    		<div class="col-lg-3 col-md-6 col-sm-6">
+      			<i class="fa fa-diamond fa-5x"></i>
+      			<p>Heading 2</p>
+      			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    		</div>
+    		<div class="col-lg-3 col-md-6 col-sm-6">
+      			<i class="fa fa-cog fa-5x"></i>
+      			<p>Heading 4</p>
+      			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    		</div>
+  		</div>
+</div>
+<!-- Services Section -->
+<div id="services">
+	<div class="hdn"></div>
+	<h2>SERVICES</h2>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    	<div id="service-txt">
+      		<h3>What we do.</h3>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      		<button class="button" type="button"><a href="#portfolio"><i class="fa fa-th"> </i> View Our Works</a></button>
+      	</div>
+    </div>
+    <div class="col-lg-6 col-md-12 hidden-xs">
+      <img src="/assets/services.jpg">
+    </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <h2>Samples/Achivements</h2>
+  <p>What we've done so far</p>
+
+  <div class="gallery">
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <img class="images" src="/assets/s1.jpg"  alt="Bridge">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <img class="images" src="/assets/s2.jpg" alt="Red Flower">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <img class="images" src="/assets/s3.jpg" alt="Bulb">
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <img class="images" src="/assets/s4.jpg" alt="Flower">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <img class="images" src="/assets/s5.jpg" alt="Wolf">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <img class="images" src="/assets/s6.jpg" alt="Grapes">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal hidden-sm hidden-xs">
+  	<span class="modalClose">&times;</span>
+  		<img class="modal-content zoom-in">
+  		<!-- <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+    	<a id="next" onclick="plusSlides(1)"">&#10095;</a> -->
+ </div>
+</div>
+
+<!-- Pricing Section -->
+<div id="price">
+  <h2>Subscribe with us</h2>
+  <p>Choose a pricing plan that fits your needs</p>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+  		<ul class="price np">
+    		<li class="header">BASIC</li>
+    		<li class="grey">Rs 1000/ month</li>
+    		<li>2 times Appointment</li>
+    		<li>3 Free lab Test</li>
+    		<li>Priority level 1</li>
+    		<li>No waiting for the Appointment</li>
+    		<li class="grey"><a href="#contact" class="button">Sign Up</a></li>
+  		</ul>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-12" id="best">
+  		<ul class="price">
+  			<li id="bs">Best Selling</li>
+    		<li class="header">BEST</li>
+    		<li class="grey">Rs 2500 / month</li>
+    		<li>3 times Appointment</li>
+    		<li>5 Free Lab Test</li>
+    		<li>Priority level 2</li>
+        <li>No waiting for the Appointment</li>
+    		<li class="grey"><a href="#contact" class="button">Sign Up</a></li>
+  		</ul>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-12">
+  		<ul class="price np">
+    		<li class="header">PREMIUM</li>
+    		<li class="grey">Rs 5000 / month</li>
+    		<li>5 times Appointment</li>
+        <li>10 Free Lab Test</li>
+        <li>Priority level 3</li>
+        <li>No waiting for the Appointment</li>
+    		<li class="grey"><a href="#contact" class="button">Sign Up</a></li>
+  		</ul>
+	</div>
+</div>
+<!-- Team Section -->
+<div id="team">
+  <h2>MEET THE TEAM</h2>
+  <p id="team-title">The talents behind this Project</p>
+ <div class="team">
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="card">
+      <img src="http://c1.staticflickr.com/5/4614/38590360350_d46a0e7b5b_z.jpg" alt="Jane">
+      <div class="container">
+        <h3>Balaji Ram Mohan</h3>
+        <p class="title">Team Head</p>
+        <p>Some texts that describes me <br>
+        lorem ipsum ipsum lorem.</p>
+        <p>brm@example.com</p>
+        <a href="#contact"><p><button class="button" type="button"><i class="fa fa-envelope"> </i> Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="card">
+      <img src="/assets/profile.png" alt="Mike">
+      <div class="container">
+        <h3>Ankush Babu</h3>
+        <p class="title">Web Developer</p>
+        <p>Some texts that describes me <br>
+        lorem ipsum ipsum lorem.</p>
+        <p>ankush@example.com</p>
+        <a href="#contact"><p><button class="button" type="button"><i class="fa fa-envelope"> </i> Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="card">
+      <img src="/assets/profile.png" alt="John">
+      <div class="container">
+        <h3>Sai Teja</h3>
+        <p class="title">Data Analyst</p>
+        <p>Some texts that describes me <br>
+        lorem ipsum ipsum lorem.</p>
+        <p>sai@example.com</p>
+        <a href="#contact"><p><button class="button" type="button"><i class="fa fa-envelope"> </i> Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="card">
+      <img src="/assets/profile.png" alt="John">
+      <div class="container">
+        <h3>Venkateshuuu</h3>
+        <p class="title">maintenance</p>
+        <p>Some texts that describes me <br>
+        lorem ipsum ipsum lorem.</p>
+        <p>badai@example.com</p>
+        <a href="#contact"><p><button class="button" type="button"><i class="fa fa-envelope"> </i> Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+ </div> 
+</div>
+<!-- Contact Section -->
+<div id="contact">
+  <h2 class>CONTACT US</h2>
+  <p id="contact-title">Leave us a message</p>
+  <div class="container">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <p>We'll get back to you within 24 hours.</p><br>
+      <p><span class="fa fa-map-marker"></span> VVIT,Nambur</p>
+      <p><span class="fa fa-phone"></span> +0012 345 6789</p>
+      <p><span class="fa fa-envelope"></span> myemail@something.com</p> 
+    </div>
+    <div class="col-lg-8 col-md-12 col-sm-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="form-group">
+          <button class="button" type="submit">Submit</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="/website#hero" title="To Top" class="bounce">
+    <span class="fa fa-chevron-up"></span>
+  </a>
+  <div class="social-icons">
+    <a><i class="fa fa-facebook-official"></i></a>
+    <a><i class="fa fa-instagram"></i></a>
+    <a><i class="fa fa-snapchat"></i></a>
+    <a><i class="fa fa-pinterest-p"></i></a>
+    <a><i class="fa fa-twitter"></i></a>
+    <a><i class="fa fa-linkedin"></i></a>
+  </div>
+  <p>Made with <i class="fa fa-heart" style="font-size:18px;color:red"></i> by Balaji Ram Mohan &copy; 2018</p> 
+</footer>
+
+
+                                
