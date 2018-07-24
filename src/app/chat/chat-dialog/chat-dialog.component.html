@@ -1,8 +1,9 @@
 
-<div class="col-md-6 offset-md-3 col-sm-12" style="margin-top:100px;" >
+<div  class="col-md-6 offset-md-3 col-sm-12" style="margin-top:30px;margin-bottom:30px;height:600px;overflow:auto;overflow-x:hidden;
+    overflow-y:visible;" >
 
 <ng-container *ngFor="let message of messages | async">
-  <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+  <div  class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
                                     'to':   message.sentBy === 'user' }">
     {{ message.content }}
   </div>
@@ -23,7 +24,7 @@
 <div class="input-group mb-3">
   <input type="text" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
   <div class="input-group-append">
-    <span class="input-group-text" id="basic-addon2" (click)="sendMessage()"> send </span>
+    <button class=" btn input-group-text" id="basic-addon2" (click)=" sendMessage()" > send </button>
   </div>
 </div>
 </div>

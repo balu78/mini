@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ChatService, Message } from '../../chat.service';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/scan';
+declare var $ : any;
 @Component({
   selector: 'app-chat-dialog',
   templateUrl: './chat-dialog.component.html',
@@ -19,5 +20,7 @@ export class ChatDialogComponent implements OnInit {
   sendMessage() {
     this.chat.converse(this.formValue);
     this.formValue = '';
+
   }
+  
 }
